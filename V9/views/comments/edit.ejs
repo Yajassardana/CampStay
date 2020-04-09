@@ -1,0 +1,14 @@
+<%-include("../partials/header")%>
+<div class="container" style="width:60%; max-width:500px; margin:0 auto;">
+  <h1 style="text-align:center">Update comment</h1>
+  <form action="/campgrounds/<%=campId%>/comments/<%=comment._id%>?_method=PUT" method="post">
+    <div class="form-group">
+      <input class="form-control" type="link" name="comment[text]" placeholder="Text" value="<%=comment.text%>">
+      </div>
+      <div class="form-group">
+        <button class="btn btn-md btn-block btn-primary">Update!</button>
+        </div>
+  </form>
+  <a href="/campgrounds/<%=campId%>" class="text-primary">Go Back</a>
+</div>
+<%-include("../partials/footer")%>
