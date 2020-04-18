@@ -1,5 +1,6 @@
 var express=require("express");
 var app= express();
+var mongoose = require("mongoose");
 app.set("view engine","ejs");
 app.use(express.static('public'));
 var bodyParser=require("body-parser");
@@ -24,4 +25,4 @@ app.post("/campgrounds",function(req,res){
   campgrounds.push(newCamp);
   res.redirect("campgrounds");
 });
-app.listen(3000);
+app.listen(process.env.PORT);

@@ -4,7 +4,7 @@
   "description": "Final Project",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "Yajas Sardana",
   "license": "ISC",
@@ -12,6 +12,10 @@
     "body-parser": "^1.19.0",
     "ejs": "^3.0.2",
     "express": "^4.17.1",
+    "mongoose": "^5.9.7",
     "request": "^2.88.2"
+  },
+  "engines": {
+    "node": "12.16.1"
   }
 }
